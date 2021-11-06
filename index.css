@@ -1,0 +1,33 @@
+.width-max {
+  max-width: 100%;
+  width: 100%;
+}
+
+.general-text {
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  left: 0%;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.message-of {
+  font-size: 2.5em;
+}
+
+.when-wedding {
+}
+
+.where-wedding {
+}
+
+.invitation {
+}
+
+.greet-text {
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+#gallery {
+  margin-top: 150px;
+}
