@@ -3,12 +3,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,6 +13,7 @@
       crossorigin="anonymous"
     />
     <link href="./index.css" rel="stylesheet" />
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="general" class="container-sm p-0">
@@ -30,7 +28,7 @@
         <span>선우</span>
       </div>
       <div class="when-wedding general-text">
-        2021. 12. 19. 토요일 오전 11시
+        2021. 12. 19. 토요일 오전 12시
       </div>
       <div class="where-wedding general-text mb-3">역삼동 성당</div>
       <img
@@ -40,7 +38,7 @@
       />
     </section>
     <section id="greet">
-      <div class="invitation fs-2 text-center mt-3">Invitation</div>
+      <div class="invitation text-center mt-3">Invitation</div>
       <img class="width-max" src="./img/invitation.jpg" />
       <div class="greet-text text-center">
         모두가 어려운 시기를 보내는 요즘, <br />많은 고민 끝에 서로에 대한
@@ -49,16 +47,255 @@
         마음 간직하고 행복하게 잘 살겠습니다.<br />진심으로 건강하시기를
         기원합니다.<br />다시 한번 감사의 말씀 올립니다.
       </div>
-      <div class="parents text-center mt-4">
-        이기형, 이혜영 의 장남 재범
-      </div>
-      <div class="parents text-center">
-        강선우, 윤소연 의 장녀 선우
+      <div class="parents text-center mt-4">이기형, 이혜영 의 장남 재범</div>
+      <div class="parents text-center">강승수, 윤소연 의 장녀 선우</div>
+    </section>
+    <section class="meal p-2 mt-4">
+      <div class="poll fs-2 text-center mt-3">결혼식 식사</div>
+      <div>
+        <form>
+          <div class="mb-3">
+            <label for="nameInput" class="form-label">이름</label>
+            <small id="warning-name" class="text-danger">
+              이름을 입력해주세요.
+            </small>
+            <input type="text" class="form-control" id="nameInput" />
+          </div>
+          <div class="mb-3">
+            <label for="telInput" class="form-label">연락처</label>
+            <small id="warning-tel" class="text-danger">
+              연락처를 입력해주세요 (예시: 010-1234-5678).
+            </small>
+            <input type="tel" class="form-control" id="telInput" />
+          </div>
+          <div class="mb-3">
+            <div>식사에 참석 하시나요?</div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="dine-in"
+                id="yes-dine-in"
+                checked
+              />
+              <label class="form-check-label" for="yes-dine-in"> 예 </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="dine-in"
+                id="no-dine-in"
+              />
+              <label class="form-check-label" for="no-dine-in"> 아니오 </label>
+            </div>
+            <div id="form-num-attend">
+              <div>
+                식사 인원 수
+                <small id="warning-attend-num" class="text-danger">
+                  식사 인원 수를 선택해주세요.
+                </small>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  name="attend-radio"
+                  type="radio"
+                  id="attend-1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="attend-1">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  name="attend-radio"
+                  type="radio"
+                  id="attend-2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="attend-2">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  name="attend-radio"
+                  type="radio"
+                  id="attend-3"
+                  value="option3"
+                />
+                <label class="form-check-label" for="attend-3">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  name="attend-radio"
+                  type="radio"
+                  id="attend-4"
+                  value="option3"
+                />
+                <label class="form-check-label" for="attend-4">4</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  name="attend-radio"
+                  type="radio"
+                  id="attend-5"
+                  value="option3"
+                />
+                <label class="form-check-label" for="attend-5">5</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  name="attend-radio"
+                  type="radio"
+                  id="attend-6"
+                  value="option3"
+                />
+                <label class="form-check-label" for="attend-6">6</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  name="attend-radio"
+                  type="radio"
+                  id="attend-7"
+                  value="option3"
+                />
+                <label class="form-check-label" for="attend-7">7</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  name="attend-radio"
+                  type="radio"
+                  id="attend-8"
+                  value="option3"
+                />
+                <label class="form-check-label" for="attend-8">8</label>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary" id="attend-submit">
+            제출하기
+          </button>
+        </form>
       </div>
     </section>
     <section id="gallery">
-      <div class="invitation fs-2 text-center mt-3">Gallery</div>
-      <img class="width-max" src="./img/invitation.jpg" />
+      <div class="invitation text-center mt-3">Gallery</div>
+      <img class="width-max gallery-img" src="./img/wed-1.png" />
+      <img class="width-max gallery-img" src="./img/wed-2.png" />
+      <img class="width-max gallery-img" src="./img/wed-3.png" />
+      <img class="width-max gallery-img" src="./img/wed-4.png" />
+      <img class="width-max gallery-img" src="./img/wed-5.png" />
+      <img class="width-max gallery-img" src="./img/wed-6.png" />
     </section>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+      import {
+        getFirestore,
+        collection,
+        addDoc,
+      } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDmToZM8dWizPgLLr8bZiM_7uhVlxunDWU",
+        authDomain: "wedding-jb-sw.firebaseapp.com",
+        projectId: "wedding-jb-sw",
+        storageBucket: "wedding-jb-sw.appspot.com",
+        messagingSenderId: "828439772353",
+        appId: "1:828439772353:web:259090dd52d48f8ace2840",
+        measurementId: "G-PZKWCTRNCP",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore();
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const getFormValue = (id) => {
+          let input = document.getElementById(id);
+          return input.value;
+        };
+
+        const getAttendingPeopleCount = () => {
+          let elements = document.getElementsByName("attend-radio");
+          for (const elem of elements) {
+            if (elem.checked) {
+              let name = elem.id;
+              return parseInt(name.substr(name.indexOf("-") + 1));
+            }
+          }
+        };
+
+        const makeVisible = (id) => {
+          document.getElementById(id).style.display = "block";
+        };
+        const makeHide = (id) => {
+          document.getElementById(id).style.display = "none";
+        };
+
+        const dineIn = () => {
+          return document.getElementById("yes-dine-in").checked;
+        };
+
+        const submit_btn = document.getElementById("attend-submit");
+        submit_btn.addEventListener("click", async function () {
+          if (dineIn() && !getAttendingPeopleCount()) {
+            makeVisible("warning-attend-num");
+            return;
+          } else {
+            makeHide("warning-attend-num");
+          }
+
+          if (!getFormValue("nameInput")) {
+            makeVisible("warning-name");
+            return;
+          } else {
+            makeHide("warning-name");
+          }
+
+          if (!getFormValue("telInput")) {
+            makeVisible("warning-tel");
+            return;
+          } else {
+            makeHide("warning-tel");
+          }
+
+          try {
+            submit_btn.disabled = true;
+            submit_btn.innerText = "제출 중입니다.";
+
+            const docRef = await addDoc(collection(db, "attend"), {
+              name: getFormValue("nameInput"),
+              tel: getFormValue("telInput"),
+              dine_in: dineIn(),
+              num_attend: dineIn() ? getAttendingPeopleCount() : 0,
+              timestamp: Date.now(),
+            });
+
+            submit_btn.innerText = "제출에 성공하였습니다!";
+          } catch (e) {
+            console.error("Error adding document: ", e);
+            submit_btn.innerText = "제출하기";
+          }
+        });
+
+        document.getElementById("yes-dine-in").addEventListener("click", () => {
+          makeVisible("form-num-attend");
+        });
+        document.getElementById("no-dine-in").addEventListener("click", () => {
+          makeHide("form-num-attend");
+        });
+      });
+    </script>
   </body>
 </html>

@@ -1,3 +1,7 @@
+body {
+  font-family: 'Nanum Myeongjo', serif;
+}
+
 .width-max {
   max-width: 100%;
   width: 100%;
@@ -8,7 +12,6 @@
   vertical-align: middle;
   width: 100%;
   left: 0%;
-  font-family: 'Nanum Myeongjo', serif;
 }
 
 .message-of {
@@ -28,6 +31,30 @@
   font-family: 'Nanum Myeongjo', serif;
 }
 
+.invitation {
+  font-family: 'Italianno', cursive;
+  font-size: 3rem;
+}
+
+.gallery-img {
+  padding-bottom: 15px;
+  background-color: #E8F5F6;
+}
+
 #gallery {
-  margin-top: 150px;
+  margin-top: 50px;
+  font-family: 'Italianno', cursive;
+  font-size: 3rem;
+}
+
+#warning-attend-num {
+  display: none;
+}
+
+#warning-name {
+  display: none;
+}
+
+#warning-tel {
+  display: none;
 }
