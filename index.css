@@ -31,6 +31,13 @@ body {
   font-family: 'Nanum Myeongjo', serif;
 }
 
+.location {
+  font-size: 2rem;
+
+  border-bottom: 12px solid #E8F5F6;
+  padding-bottom: 12px;
+}
+
 .invitation {
   font-family: 'Italianno', cursive;
   font-size: 3rem;
@@ -41,8 +48,11 @@ body {
   background-color: #E8F5F6;
 }
 
+#form-num-attend {
+  margin-top: 12px;
+}
+
 #gallery {
-  margin-top: 50px;
   font-family: 'Italianno', cursive;
   font-size: 3rem;
 }
@@ -57,4 +67,16 @@ body {
 
 #warning-tel {
   display: none;
+}
+
+.btn-div {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#attend-submit {
+  font-size: 1.4rem;
+}
+.meal {
+  background-color: #f2fcfc;
 }

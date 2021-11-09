@@ -39,7 +39,7 @@
     </section>
     <section id="greet">
       <div class="invitation text-center mt-3">Invitation</div>
-      <img class="width-max" src="./img/invitation.jpg" />
+      <img class="width-max mb-3" src="./img/invitation.jpg" />
       <div class="greet-text text-center">
         모두가 어려운 시기를 보내는 요즘, <br />많은 고민 끝에 서로에 대한
         믿음으로<br />결혼식을 올리고자 합니다.<br />결혼식 참석에 대한 부담은
@@ -51,7 +51,7 @@
       <div class="parents text-center">강승수, 윤소연 의 장녀 선우</div>
     </section>
     <section class="meal p-2 mt-4">
-      <div class="poll fs-2 text-center mt-3">결혼식 식사</div>
+      <div class="poll fs-2 text-center mt-3">결혼식 식사 참석 조사</div>
       <div>
         <form>
           <div class="mb-3">
@@ -70,7 +70,7 @@
           </div>
           <div class="mb-3">
             <div>식사에 참석 하시나요?</div>
-            <div class="form-check">
+            <div class="form-check form-check-inline">
               <input
                 class="form-check-input"
                 type="radio"
@@ -80,7 +80,7 @@
               />
               <label class="form-check-label" for="yes-dine-in"> 예 </label>
             </div>
-            <div class="form-check">
+            <div class="form-check form-check-inline">
               <input
                 class="form-check-input"
                 type="radio"
@@ -178,20 +178,26 @@
               </div>
             </div>
           </div>
-          <button type="button" class="btn btn-primary" id="attend-submit">
-            제출하기
-          </button>
+          <div class='btn-div'>
+            <button type="button" class="btn btn-primary" id="attend-submit">
+              제출하기
+            </button>
+          </div>
         </form>
       </div>
     </section>
     <section id="gallery">
-      <div class="invitation text-center mt-3">Gallery</div>
+      <div class="invitation text-center mt-3 mb-2">Gallery</div>
       <img class="width-max gallery-img" src="./img/wed-1.png" />
       <img class="width-max gallery-img" src="./img/wed-2.png" />
       <img class="width-max gallery-img" src="./img/wed-3.png" />
-      <img class="width-max gallery-img" src="./img/wed-4.png" />
+      <img class="width-max gallery-img" src="./img/wed-11.png" />
       <img class="width-max gallery-img" src="./img/wed-5.png" />
-      <img class="width-max gallery-img" src="./img/wed-6.png" />
+      <img class="width-max gallery-img" src="./img/wed-9.png" />
+    </section>
+    <section>
+      <div class="location text-center mt-3">오시는 길</div>
+      <img class="width-max" src="img/map.png" />
     </section>
     <script type="module">
       // Import the functions you need from the SDKs you need
@@ -282,10 +288,11 @@
               timestamp: Date.now(),
             });
 
-            submit_btn.innerText = "제출에 성공하였습니다!";
+            submit_btn.innerText = "제출 되었습니다.";
           } catch (e) {
             console.error("Error adding document: ", e);
-            submit_btn.innerText = "제출하기";
+            submit_btn.innerText = "다시 제출해주세요.";
+            submit_btn.disabled = false;
           }
         });
 
