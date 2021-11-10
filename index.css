@@ -92,3 +92,7 @@ body {
 .meal {
   background-color: #f2fcfc;
 }
+
+#label-no {
+  white-space: nowrap;
+}
