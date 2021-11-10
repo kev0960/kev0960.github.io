@@ -38,6 +38,18 @@ body {
   padding-bottom: 12px;
 }
 
+.info {
+  font-size: 2rem;
+  border-top: 12px solid #E8F5F6;
+  border-bottom: 12px solid #E8F5F6;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.info-list {
+  padding-top: 10px;
+}
+
 .invitation {
   font-family: 'Italianno', cursive;
   font-size: 3rem;
